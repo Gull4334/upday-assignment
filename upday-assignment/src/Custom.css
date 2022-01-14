@@ -1,0 +1,28 @@
+.home-header{
+  padding: 2% 2%;
+}
+
+.home-header-title{
+  float: left;
+}
+
+.home-header-action{
+  float: right;
+}
+
+.board-box {
+  float: left;
+    margin: 2%;
+    width: 40%;
+    background: lightblue;
+    border-radius:8px
+}
+
+.board-title{
+  background: lightslategray;
+  color: white;
+  text-align: center;
+  padding: 2% 0%;
+  font-size: larger;
+  font-weight: 600;
+}
