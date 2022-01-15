@@ -26,3 +26,16 @@
   font-size: larger;
   font-weight: 600;
 }
+
+.news-row{
+  padding: 0% 2%;
+}
+
+.news-title{
+  width: 30%;
+}
+
+.news-action{
+  width: 40%;
+  margin-block-start: 1em;
+}

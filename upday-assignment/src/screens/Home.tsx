@@ -1,6 +1,19 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+import NewsComponent from '../components/NewsComponent';
 
 const Home = () => {
+    let navigate = useNavigate();
+
+
+    const navigatePage = (path:string):void => {
+        navigate('/' + path);
+    }
+
+    const deleteNews = ():void => {
+
+    }
+
     return (
         <div className='main-container'>
             <div className='home-header'>
@@ -12,45 +25,25 @@ const Home = () => {
             <div className='board-box'>
                 <div className='board-title'>Sports</div>
                 <div className='board-news-area'>
-                    <ul>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                    </ul>
+                    <NewsComponent />
                 </div>
             </div>
             <div className='board-box'>
                 <div className='board-title'>Sports</div>
                 <div className='board-news-area'>
-                    <ul>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                    </ul>
+                    <NewsComponent />
                 </div>
             </div>
             <div className='board-box'>
                 <div className='board-title'>Sports</div>
                 <div className='board-news-area'>
-                    <ul>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                    </ul>
+                    <NewsComponent />
                 </div>
             </div>
             <div className='board-box'>
                 <div className='board-title'>Sports</div>
                 <div className='board-news-area'>
-                    <ul>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                        <li>News 1</li>
-                    </ul>
+                    <NewsComponent />
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import News from './screens/News';
 import Login from './screens/Login';
+import NewsAddEdit from './screens/NewsAddEdit';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news-add-edit" element={<NewsAddEdit />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>     
