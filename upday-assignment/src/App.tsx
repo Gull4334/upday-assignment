@@ -8,6 +8,12 @@ import {
 import News from './screens/News';
 import Login from './screens/Login';
 import NewsAddEdit from './screens/NewsAddEdit';
+import { IBoard, INews } from './components/Common';
+
+type propsss = {
+  news:INews,
+  board:IBoard
+}
 
 function App() {
   return (

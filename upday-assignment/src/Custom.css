@@ -1,5 +1,6 @@
 .home-header{
   padding: 2% 2%;
+  background-color: lightblue;
 }
 
 .home-header-title{
@@ -15,7 +16,7 @@
     margin: 2%;
     width: 40%;
     background: lightblue;
-    border-radius:8px
+    border-radius:8px;
 }
 
 .board-title{
@@ -25,17 +26,31 @@
   padding: 2% 0%;
   font-size: larger;
   font-weight: 600;
+    border-radius:8px;
+    width: 100%;
+}
+
+.board-news-area{
+  padding: 0% 2%;
+}
+
+.board-title-text{
+  float: left;
+  width: 50%;
 }
 
 .news-row{
   padding: 0% 2%;
+  width: 100%;
+  display: table-row;
 }
 
 .news-title{
-  width: 30%;
+  display: table-cell;
+  width: 35.5%;
 }
 
 .news-action{
-  width: 40%;
-  margin-block-start: 1em;
+  display: table-cell;
+  text-align: right;
 }

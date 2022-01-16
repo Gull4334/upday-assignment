@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     let navigate = useNavigate();
+    
     const [input, setInput] = useState({ email: "", password: "", isEmailValidated: false });
 
     const validateEmail = (email: string): boolean => {
@@ -21,7 +22,7 @@ const Login = () => {
         if (!validateEmail(input.email)) {
             alert('email not correct');
         }
-        else{
+        else {
             navigate(`/`);
         }
     }

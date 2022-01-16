@@ -1,25 +1,22 @@
-import { useNavigate } from "react-router-dom";
+import { type } from "os";
+import { useNavigate } from "react-router";
+import { IBoard, INews } from '../components/Common';
 
-const NewsComponent = () => {
-    let navigate = useNavigate();
+type props = {
+    news:INews,
+    board:IBoard
+}
 
-
-    const navigatePage = (path:string):void => {
-        navigate('/' + path);
-    }
-
-    const deleteNews = ():void => {
-
-    }
-
-    return(
+const NewsComponent: React.FC<props> = ({news, board}) => {
+    const navigate = useNavigate();
+    
+    return (
         <div className='news-row'>
-                        <div className='news-title' onClick={() => navigatePage('news')}><h4>News From Component</h4></div>
-                        <div className='news-action'>
-                            <button onClick={() => navigatePage('news-add-edit')}>edit</button>
-                            <button onClick={deleteNews}>delete</button>
-                        </div>
-                    </div>
+            <div className='news-title' onClick={() => navigate('news')}><h4>{news.title}</h4></div>
+            <div className='news-action'>
+                <button onClick={() => navigate('news-add-edit', { state: {news:news, board:board} })}>edit</button>
+            </div>
+        </div>
     );
 
 }
