@@ -1,21 +1,49 @@
+.base-color{
+  background-color: #a3dab9;
+}
 .home-header{
-  padding: 2% 2%;
-  background-color: lightblue;
+  padding: 1% 2%;
+  display: flex;
+  color: white;
 }
 
 .home-header-title{
   float: left;
+  width: 60%;
 }
 
 .home-header-action{
-  float: right;
+  float: left;
+  width: 40%;
+  text-align: right;
+  position: relative;
+  top: 30%;
+
+}
+
+.main-container{
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: #f8f7f7;
+}
+
+.login-container{
+  margin: 8% auto;
+  width: 40%;
+  border-radius: 8px;
+  padding: 5%;
+
+}
+
+.box{
+  margin: 5% 0%;
 }
 
 .board-box {
   float: left;
     margin: 2%;
-    width: 40%;
-    background: lightblue;
+    width: 45%;
     border-radius:8px;
 }
 
@@ -32,6 +60,8 @@
 
 .board-news-area{
   padding: 0% 2%;
+  height: 250px;
+  overflow-y: auto;
 }
 
 .board-title-text{
@@ -40,17 +70,46 @@
 }
 
 .news-row{
-  padding: 0% 2%;
+  padding: 1% 0%;
   width: 100%;
-  display: table-row;
+  display: flex;
 }
 
 .news-title{
-  display: table-cell;
-  width: 35.5%;
+  width: 70%;
 }
 
 .news-action{
-  display: table-cell;
   text-align: right;
+  width: 30%;
+}
+
+.button{
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.add-button{
+  background-color: #71d465;  
+  margin-right: 5px;
+
+}
+
+.edit-button{
+  background-color: #f59068;
+  margin-right: 5px;
+}
+
+.delete-button{
+  background-color: #f56868;
+}
+
+.cancel-button{
+  background-color: #a9b4a7;
 }
